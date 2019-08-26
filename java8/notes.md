@@ -61,9 +61,28 @@ if body has only one statement then currly brases are not required, so {} should
  ```java
  (a,b) -> System.out.println(a+b);
  ```
- 
- 
-
+  **ex 3:** simple method which will return String lenght as per the input of String.
+```java
+public int getLength(String s) {
+    return s.length();
+}
+```
+converting the above function to lambda. As per the rule name , modifiers, return type should be elimented.
+```java
+(String s) -> { return s.lenght(); }
+```
+if body has only one statement then currly brases are not required, so {} should be elimented.
+```java
+(String s) ->  return s.lenght(); 
+```
+ based on context variable type  will be taken  by compiler(type inference) like genteics
+```java
+(s) ->  return s.lenght(); 
+```
+if input parameter has only one argument then  we can elimenate braces '()' and if body has only return type is optional if body has only one statment.
+```java
+s -> s.length();
+```
  
 
 
