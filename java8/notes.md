@@ -43,6 +43,28 @@ if body has only one statement then currly brases are not required, so {} should
 () -> System.out.println("Hello");
 ```
 
+ **ex 2:** simple method which will take two integer values and will print sumation.
+ ```java
+ public void add(int a, int b) {
+     System.out.println(a+b);
+ }
+ ```
+ converting the above function to lambda. As per the rule name , modifiers, return type should be elimented.
+ ```java
+ (int a, int b) -> { System.out.println(a+b); }
+ ```
+ if body has only one statement then currly brases are not required, so {} should be elimented.
+ ```java
+ (int a, int b) -> System.out.println(a+b);
+ ```
+ based on context variable type  will be taken  by compiler(type inference) like genteics
+ ```java
+ (a,b) -> System.out.println(a+b);
+ ```
+ 
+ 
+
+ 
 
 
 
